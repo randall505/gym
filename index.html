@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRONCORE GYM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">IRON<span>CORE</span></div>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <ul id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="tagline">NO EXCUSES. JUST RESULTS.</p>
+        <h1>BUILD YOUR<br><span>STRONGER</span> SELF.</h1>
+        <p>Train harder. Get stronger. Become the best version of yourself.</p>
+        <a href="#plans" class="btn">JOIN NOW</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>WHY <span>IRONCORE?</span></h2>
+      <div class="cards">
+        <div class="card">
+          <div class="icon">🏋️</div>
+          <h3>Modern Equipment</h3>
+          <p>Professional equipment for strength, cardio and functional training.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🔥</div>
+          <h3>Expert Trainers</h3>
+          <p>Get guidance from experienced trainers who keep you motivated.</p>
+        </div>
+        <div class="card">
+          <div class="icon">⚡</div>
+          <h3>Real Results</h3>
+          <p>Follow structured workouts and track your progress every week.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="section dark">
+      <h2>OUR <span>PROGRAMS</span></h2>
+      <div class="program-grid">
+        <div class="program"><h3>Strength</h3><p>Build power, muscle and confidence.</p></div>
+        <div class="program"><h3>Fat Loss</h3><p>Burn calories with smart training plans.</p></div>
+        <div class="program"><h3>Muscle Gain</h3><p>Progressive workouts designed for growth.</p></div>
+        <div class="program"><h3>Personal Training</h3><p>One-to-one coaching built around your goals.</p></div>
+      </div>
+    </section>
+
+    <section id="plans" class="section">
+      <h2>MEMBERSHIP <span>PLANS</span></h2>
+      <div class="pricing">
+        <div class="price-card">
+          <h3>BASIC</h3><div class="price">₹999<span>/month</span></div>
+          <p>Gym access</p><p>Locker access</p><p>Basic workout plan</p>
+          <button onclick="selectPlan('Basic')">CHOOSE PLAN</button>
+        </div>
+        <div class="price-card featured">
+          <div class="popular">POPULAR</div>
+          <h3>PRO</h3><div class="price">₹1,499<span>/month</span></div>
+          <p>Unlimited gym access</p><p>Trainer guidance</p><p>Custom workout plan</p>
+          <button onclick="selectPlan('Pro')">CHOOSE PLAN</button>
+        </div>
+        <div class="price-card">
+          <h3>ELITE</h3><div class="price">₹2,499<span>/month</span></div>
+          <p>Everything in Pro</p><p>Personal training</p><p>Nutrition guidance</p>
+          <button onclick="selectPlan('Elite')">CHOOSE PLAN</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section dark">
+      <h2>GET <span>STARTED</span></h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <select id="plan">
+          <option value="General">I'm interested in...</option>
+          <option>Basic Membership</option>
+          <option>Pro Membership</option>
+          <option>Elite Membership</option>
+          <option>Personal Training</option>
+        </select>
+        <textarea id="message" placeholder="Your Message" rows="4"></textarea>
+        <button type="submit" class="btn">SEND MESSAGE</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 IRONCORE GYM — TRAIN HARD. STAY STRONG.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
